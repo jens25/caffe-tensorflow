@@ -42,7 +42,7 @@ def convert(def_path, caffemodel_path, data_output_path, code_output_path, phase
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('def_path', help='Model definition (.prototxt) path')
+    parser.add_argument('--def-path', help='Model definition (.prototxt) path')
     parser.add_argument('--caffemodel', help='Model data (.caffemodel) path')
     parser.add_argument('--data-output-path', help='Converted data output path')
     parser.add_argument('--code-output-path', help='Save generated source to this path')
